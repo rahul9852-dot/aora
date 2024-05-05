@@ -10,7 +10,7 @@ import { createUser } from "../../lib/appwrite";
 import CustomButton from "../../components/CustomButton";
 import FormField from "../../components/FormField";
 const SignUp = () => {
-  // const { setUser, setIsLogged } = useGlobalContext();
+  const { setUser, setIsLogged } = useGlobalContext();
 
   const [isSubmitting, setSubmitting] = useState(false);
   const [form, setForm] = useState({
@@ -26,9 +26,9 @@ const SignUp = () => {
 
     setSubmitting(true);
     try {
-      const result = await createUser(form.email, form.password, form.username);
-      // setUser(result);
-      // setIsLogged(true);
+       const result = await createUser(form.email, form.password, form.username);
+      setUser(result);
+      setIsLogged(true);
 
       router.replace("/home");
     } catch (error) {
