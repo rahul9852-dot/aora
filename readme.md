@@ -1,8 +1,6 @@
 <div align="center">
   <br />
-    <a href="https://youtu.be/ZBCUegTZF7M?si=ubt0vk70lSjt6DCs" target="_blank">
       <img src="https://i.postimg.cc/5NR9bxFM/Sora-README.png" alt="Project Banner">
-    </a>
   <br />
 
   <div>
